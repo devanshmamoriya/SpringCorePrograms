@@ -5,7 +5,7 @@ import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
 
 import com.treason.components.Flipkart;
 
-public class App {
+public class AppUsingBeanFactory {
 	public static void main(String[] args) {
 
 		DefaultListableBeanFactory defaultListableBeanFactory = new DefaultListableBeanFactory();
