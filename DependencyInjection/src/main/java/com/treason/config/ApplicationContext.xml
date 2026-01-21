@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="bluedart" class="com.treason.components.BlueDart"></bean>
+    <bean id="dtdc" class="com.treason.components.DTDC"></bean>
+    <bean id="firstflight" class="com.treason.components.FirstFlight"></bean>
+
+    <bean id="flipkart" class="com.treason.components.Flipkart" >
+    	<property name="discount" value="20"></property>
+    	<property name="courier"  ref="bluedart"></property>
+    </bean>
+    
+
+</beans>
