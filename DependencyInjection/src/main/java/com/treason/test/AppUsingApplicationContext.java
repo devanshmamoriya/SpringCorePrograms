@@ -1,6 +1,7 @@
 package com.treason.test;
 
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.treason.components.Flipkart;
@@ -20,7 +21,7 @@ public class AppUsingApplicationContext {
 		
 	    System.out.println("\nCONTAINER IS CLOSED");
 	    
-
+	    ((ConfigurableApplicationContext) context).close();
 	}
 
 }
